@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="BVT" id="264681a7-e66c-406d-8aef-c47756bbff6c" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+  <TestList name="Precommit" id="83347439-48f1-44ad-aba7-4fc35abda559" parentListId="264681a7-e66c-406d-8aef-c47756bbff6c">
+    <TestLinks>
+      <TestLink id="8abeca32-2156-96ff-b135-957aef41b71b" name="TestPreCommitVersionLessThanCompare_FacebookAdGroup" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="ce05e0da-8954-db98-9d04-37a6d4cd09c5" name="TestMultipleClientsDoPreCommit_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="69d3a01c-13ff-12df-3e60-1a16e6917118" name="TestPreCommitVersionLessThanCompare_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="d301bbbf-db91-874d-4354-915ba711a987" name="TestPreCommitVersionGreatThanCompare_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="e7b4d5d3-c54c-5bed-8746-09a83d03e21c" name="TestPreCommitVersionGreatThanCompare_FacebookAdGroup" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="40547b19-dad8-59dc-cf60-ef0736d5e5f8" name="TestPreCommitVersionEqualCompare_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="ef54375e-0296-8cab-3278-034ebdc64128" name="TestPreCommitVersionEqualCompare_FacebookAdGroup" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="27f72dc1-6a40-4963-b2a4-c9e3ac36ead0" name="Local" storage="local.testsettings" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="Commit" id="a339117a-79ae-4a07-b455-687fb6ae872d" parentListId="264681a7-e66c-406d-8aef-c47756bbff6c">
+    <TestLinks>
+      <TestLink id="43b456cc-a77a-a799-2412-5a4c88a3b75d" name="TestCommitOneSyncDataObject_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="9491e4e5-27de-2771-2bf0-324323349040" name="TestMultipleClientsDoCommit_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="SmokeTest" id="ba3951cd-2452-417a-83d0-3552094755aa" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <TestLinks>
+      <TestLink id="ca41d899-3466-1b10-84e9-94247467dce6" name="AdvertiserServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="b54f3a8d-5180-09b7-7afa-9c32bf49983f" name="AdCenterServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="9ccb2396-ce24-6c5b-7b9c-93da10681da4" name="QueryEventServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="263a3be1-7a55-d3f3-9fd3-196db4db773e" name="FacebookServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="3bba1143-69af-615b-d42d-5578faa76c54" name="TrackingServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="11dd78dd-e9fe-3016-e427-b2fe8e0e26d4" name="CommandServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="6f0183c4-d879-8510-141d-da9e4a33f27a" name="GoogleServiceSmokeTest" storage="smoketest\bin\release\smoketest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Update" id="bded89bc-1666-4fe0-aa9d-88f2dc77bd62" parentListId="264681a7-e66c-406d-8aef-c47756bbff6c">
+    <TestLinks>
+      <TestLink id="04671a0e-0f0c-0264-1d7d-ceffec3ceccc" name="TestUpdateOneObjectStateWithClientVersionEqualToServerVersion_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="837c8265-cf1d-0019-2f4a-4110ee07da2c" name="TestUpdateOneObjectStateWithClientVersionGreatThanServerVersion_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="f8984e8f-161d-02a8-16e6-dfe4ef2abcc3" name="TestUpdateOneObjectStateWithClientVersionLessThanServerVersion_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="NewDataCommit" id="d77826e9-01f0-4bfa-9aa7-d9a7af2ad089" parentListId="264681a7-e66c-406d-8aef-c47756bbff6c">
+    <TestLinks>
+      <TestLink id="c9883274-8483-2af4-5732-9af84be8d3b4" name="TestNewDataCommitOneSyncDataObject_FacebookCampaign" storage="bin\release\hostingservice.test.syncdataservice.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+</TestLists>

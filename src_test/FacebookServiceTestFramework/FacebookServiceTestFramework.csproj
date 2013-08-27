@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E93ECC05-8A0F-4C69-90EE-EADBF92D64D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HostingService.Test.Framework.FacebookService</RootNamespace>
+    <AssemblyName>HostingService.Test.Framework.FacebookService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="protobuf-net-afp">
+      <HintPath>..\lib\protobuf-net-afp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FacebookServiceHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Application\AdSage.Concert.Hosting.Application.DTO\AdSage.Concert.Hosting.Application.DTO.csproj">
+      <Project>{B8B98C49-E4A8-4536-AFF2-A8FFEDD7B71E}</Project>
+      <Name>AdSage.Concert.Hosting.Application.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Command\AdSage.Concert.Hosting.Command\AdSage.Concert.Hosting.Command.csproj">
+      <Project>{DFA1F3DA-27AD-454F-9FBD-A8411576DBBB}</Project>
+      <Name>AdSage.Concert.Hosting.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Crosscutting\AdSage.Concert.Hosting.Common\AdSage.Concert.Hosting.Common.csproj">
+      <Project>{95757C2C-B2E7-4255-9F20-39CDFBFE0C73}</Project>
+      <Name>AdSage.Concert.Hosting.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Performance\Model\AdSage.Concert.Hosting.Performance\AdSage.Concert.Hosting.Performance.Model.csproj">
+      <Project>{A9F4F5C3-84B3-47B3-8BF8-EC34A15706BD}</Project>
+      <Name>AdSage.Concert.Hosting.Performance.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Service\AdSage.Concert.Hosting.Service\AdSage.Concert.Hosting.Service.csproj">
+      <Project>{00B3FB1F-FB3F-4EB8-92F1-AF1E4AFC0EE5}</Project>
+      <Name>AdSage.Concert.Hosting.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestFramework\TestFramework.csproj">
+      <Project>{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}</Project>
+      <Name>TestFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
